@@ -1,0 +1,24 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Background" parent="AppBaseTheme">
+        <item name="android:windowBackground">@drawable/background_image</item>
+    </style>
+
+    <style name="Login_background" parent="AppBaseTheme">
+        <item name="android:windowBackground">@drawable/login_bg</item>
+    </style>
+
+    <style name="NoActionBar" parent="android:Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+</resources>

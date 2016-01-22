@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_header"/>
+
+    <LinearLayout
+        android:id="@+id/llLoginTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/login_bg"
+        android:orientation="vertical" >
+
+        <!-- <TextView android:id="@+id/luvexpress" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:gravity="center" -->
+        <!-- android:padding="5dp" -->
+        <!-- android:text="Luvexpress Find Love Instantenously" -->
+        <!-- android:textColor="@color/theme_color" -->
+        <!-- android:textStyle="bold" -->
+        <!-- android:textSize="20dp" -->
+        <!-- /> -->
+
+        <com.appdupe.pair.ExtendedGallery
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:id="@+id/image_count_homescreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/message_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="By continuing, you agree to our Terms of Service and Privacy policy"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnLoginFaceBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/facebook_icon"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txtLoginPrivacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/info_icon_login"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="We don&apos;t post anything to Facebook"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/privacylayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_image"
+        android:visibility="gone" 
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/loginwithfacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/facebook_icon"
+                android:text="@string/login"
+                android:textColor="@android:color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="20dp"
+                android:background="#aaffffff" />
+
+            <TextView
+                android:id="@+id/wetakeyourprivacy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="We take your privacy seriously"
+                android:textColor="@color/theme_color"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/heart_icon_login" />
+
+                <TextView
+                    android:id="@+id/textviewfirst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="We don&apos;t post anything to facebook"
+                    android:textColor="@color/theme_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/heart_icon_login" />
+
+                <TextView
+                    android:id="@+id/textviewsecond"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Other users will never know if you’ve liked them unless they like you back"
+                    android:textColor="@color/theme_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/heart_icon_login" />
+
+                <TextView
+                    android:id="@+id/textviewthird"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Other users cannot contact you unless you have already been matched"
+                    android:textColor="@color/theme_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/heart_icon_login" />
+
+                <TextView
+                    android:id="@+id/textviewforth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your location is not shown to other users"
+                    android:textColor="@color/theme_color" />
+            </LinearLayout>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

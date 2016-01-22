@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_left"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/profilelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/selector_transparent_clicked"
+        android:padding="15dp" >
+
+        <ImageView
+            android:id="@+id/backimage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alpha="0.5"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <LinearLayout android:id="@+id/back_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:padding="3dp" >
+
+            <ImageView
+                android:id="@+id/profileimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+             />
+
+        <TextView
+            android:id="@+id/view_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="View Profile"
+            android:textColor="@color/white"
+             />
+
+        <!--
+             <TextView
+            android:id="@+id/profiletextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/profileimage"
+            android:layout_marginTop="5dp"
+            android:text="Madaan"
+            android:textSize="15sp"
+            android:textColor="#636465"
+            android:layout_marginBottom="5dp" />
+        -->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/settingtextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_trans_theme_clicked"
+        android:drawableLeft="@drawable/search_white"
+        android:drawablePadding="10dp"
+        android:gravity="left|center"
+        android:padding="15dp"
+        android:text="@string/menuserachpref"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/trans_white" />
+
+    <TextView
+        android:id="@+id/appsettextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_trans_theme_clicked"
+        android:drawableLeft="@drawable/settings_white"
+        android:drawablePadding="10dp"
+        android:gravity="center|left"
+        android:padding="15dp"
+        android:text="@string/menusetting"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+         />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/trans_white" />
+
+    <TextView
+        android:id="@+id/helptextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_trans_theme_clicked"
+        android:drawableLeft="@drawable/help_white"
+        android:drawablePadding="10dp"
+        android:gravity="center|left"
+        android:padding="15dp"
+        android:text="@string/menuhelp"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+         />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/trans_white" />
+
+    <TextView
+        android:id="@+id/sharetextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/selector_trans_theme_clicked"
+        android:drawableLeft="@drawable/share_white"
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:text="@string/menushare"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/trans_white" />
+
+</LinearLayout>

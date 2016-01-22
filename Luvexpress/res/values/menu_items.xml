@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" 
+    tools:ignore="MissingTranslation">
+
+    <string-array name="menu_items">
+        <item>Profile</item>
+        <item>Home</item>
+        <item>Message</item>
+        <item>Settings</item>
+        <item>Invite</item>
+    </string-array>
+
+</resources>

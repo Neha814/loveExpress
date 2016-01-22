@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp" 
+    android:background="@color/theme_color">
+
+    <TextView
+        android:id="@+id/txtGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Select Gender"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <RadioGroup
+        android:id="@+id/choose_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/male"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/tick"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Male"
+            android:textColor="@color/grey_logout"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@color/grey_logout" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/female"
+            android:drawablePadding="5dp"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Female"
+            android:textColor="@color/grey_logout"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="OK" />
+
+</LinearLayout>

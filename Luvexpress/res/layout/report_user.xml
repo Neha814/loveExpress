@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relay1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_header" />
+
+    <LinearLayout
+        android:id="@+id/help_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent_background"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/report_user"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Report User"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Is this person bothering you? \n Tell us what they did."
+                android:textColor="@color/theme_color"
+                android:textSize="13sp" />
+
+            <RadioGroup
+                android:id="@+id/options_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/no_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/no_reason"
+                    android:checked="true"
+                    android:drawableRight="@drawable/tick_theme"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="No Reason"
+                    android:textColor="@android:color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/wrong_messages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/wrong_message"
+                    android:checked="false"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Inappropriate Messages"
+                    android:textColor="@android:color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/wrong_pics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/wrong_pics"
+                    android:checked="false"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Inappropriate Photos"
+                    android:textColor="@android:color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/bad_behave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/bad_behave"
+                    android:checked="false"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Bad Offline Behaviour"
+                    android:textColor="@android:color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/like_spam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/like_spam"
+                    android:checked="false"
+                    android:gravity="left|center"
+                    android:padding="5dp"
+                    android:text="Feels Like Spam"
+                    android:textColor="@android:color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/other_reason"
+                    android:checked="false"
+                    android:gravity="left|center"
+                    android:padding="5dp"
+                    android:text="Others"
+                    android:textColor="@android:color/white" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@android:color/white" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/popup_theme_background"
+                android:padding="5dp"
+                android:text="Report"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/help_linear"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/popup_background"
+                android:padding="5dp"
+                android:text="@string/cancel"
+                android:textColor="@color/theme_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- android:background="@drawable/popup" -->
+    </LinearLayout>
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/imageView1" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerHorizontal="true" -->
+    <!-- android:layout_below="@+id/top_bar" -->
+    <!-- android:layout_marginTop="10dp" -->
+
+
+    <!-- android:src="@drawable/report_user" /> -->
+
+</RelativeLayout>

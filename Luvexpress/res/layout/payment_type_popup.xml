@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relay1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/popup_background" >
+
+    <LinearLayout
+        android:id="@+id/help_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- android:background="@drawable/popup" -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Your Subscription Expired!!"
+            android:textColor="@color/theme_color_light"
+            android:textStyle="bold"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Please select your subscription plan"
+            android:textColor="@color/grey_logout"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <RadioButton
+                    android:id="@+id/one_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@drawable/customdrawablecheckbox"
+                    android:padding="5dp"
+                    android:text="One Time Subscription"
+                    android:textSize="15sp"
+                    android:textColor="@color/theme_color" />
+
+                <RadioButton
+                    android:id="@+id/one_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:button="@drawable/customdrawablecheckbox"
+                    android:padding="5dp"
+                    android:text="Monthly Subscription"
+                    android:textSize="15sp"
+                    android:textColor="@color/theme_color" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="$1"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="right"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/theme_color_light" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="right"
+                    android:text="$19.99"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/theme_color_light" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/continue_"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/theme_light_button_corner"
+                android:paddingBottom="7dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="7dp"
+                android:paddingTop="7dp"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/theme_button_corner"
+                android:paddingBottom="7dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="7dp"
+                android:paddingTop="7dp"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

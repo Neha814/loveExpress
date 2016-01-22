@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/albumlistviewitem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:cacheColorHint="@android:color/transparent" >
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <org.zeroxlab.widget.RoundedImageView
+            android:id="@+id/userimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle_image" />
+
+        <LinearLayout
+            android:id="@+id/storybookTextItemlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="item name"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/lastmessage"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="lastmessage"
+                android:singleLine="true"
+                android:textColor="@color/white_light"
+                android:textSize="15sp" />
+
+            <!-- </RelativeLayout> -->
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/line1"
+        android:layout_marginLeft="50dp"
+        android:background="@color/trans_white" />
+
+</RelativeLayout>

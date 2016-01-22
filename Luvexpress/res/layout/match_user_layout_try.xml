@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/match_user_detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:id="@+id/line1" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            
+             <ImageView
+        android:id="@+id/iv_user_image_user_matches"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+         />
+             
+             
+             <TextView
+        android:id="@+id/txtMatchPerCent"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/iv_user_image_user_matches"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:text="10%"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:visibility="gone"
+        android:textColor="@color/black" />
+         
+            
+        </RelativeLayout>
+        
+        
+         <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/line1"
+        android:layout_alignParentLeft="true"
+        android:background="@color/lighter_image_below"
+        android:orientation="horizontal"
+        android:gravity="center"
+         >
+
+        <TextView
+            android:id="@+id/tv_name_age"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="Amanda, 26"
+            android:textColor="@color/black_light"
+            android:textSize="17sp"
+            />
+        
+        <View android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:background="@color/black_lighter"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <TextView
+            android:id="@+id/tv_name_active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_light"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="5dp"
+            android:paddingLeft="15dp"
+            android:gravity="right"
+            android:textSize="12sp"
+             />
+            
+            <View android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/black_lighter"/>
+            
+           <TextView
+            android:id="@+id/tv_name_away"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/black_light"
+            android:drawableLeft="@drawable/location_"
+            android:drawablePadding="5dp"
+            android:paddingLeft="15dp"
+            android:gravity="right"
+            android:textSize="12sp"
+             />
+            
+        </LinearLayout>
+    </LinearLayout>
+    
+         <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+         >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/pink_bar_left"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_follower_count_user_matches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/follower_icon"
+                android:drawablePadding="10dp"
+                android:text="04"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/pink_bar_left"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_no_book_interest_user_matches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/book_icon"
+                android:drawablePadding="10dp"
+                android:text="04"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+        
+    </LinearLayout>
+
+<!--     <ImageView -->
+<!--         android:id="@+id/iv_user_image_user_matches" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="match_parent" -->
+<!--         android:layout_centerHorizontal="true" -->
+<!--         android:scaleType="fitXY" -->
+<!--         android:src="@drawable/error" /> -->
+    
+    <LinearLayout android:id="@+id/camera_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:src="@drawable/camera2"/>
+        
+        <View android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/black_light"/>
+        
+         <TextView
+        android:id="@+id/tv_pic_count_user_matches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:gravity="center"
+        android:textColor="@color/black_light"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+        
+    </LinearLayout>
+    
+<!--     <RelativeLayout -->
+<!--             android:id="@+id/likedislikelayout" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginTop="10dp" -->
+<!--             android:layout_below="@+id/relativeLayout1" -->
+<!--             android:padding="10dp" -->
+<!--              > -->
+
+<!--             android:layout_alignParentBottom="true" -->
+
+<!--             <RelativeLayout -->
+<!--                 android:id="@+id/dislikelayout" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginRight="10dp" -->
+<!--                 android:layout_toLeftOf="@+id/infobuttonlaout" > -->
+
+<!--                 <Button -->
+<!--                     android:id="@+id/dislikeButton" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_centerVertical="true" -->
+<!--                     android:background="@drawable/cross_mark" /> -->
+<!--             </RelativeLayout> -->
+
+<!--             <RelativeLayout -->
+<!--                 android:id="@+id/likelayout" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_toRightOf="@+id/infobuttonlaout" > -->
+
+<!--                 <Button -->
+<!--                     android:id="@+id/likeButton" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_centerVertical="true" -->
+<!--                     android:background="@drawable/tick_mark" /> -->
+<!--             </RelativeLayout> -->
+
+<!--             <RelativeLayout -->
+<!--                 android:id="@+id/infobuttonlaout" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_centerHorizontal="true" -->
+<!--                 android:layout_centerVertical="true" > -->
+
+<!--                 <Button -->
+<!--                     android:id="@+id/matchedUserInfoButton" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_centerHorizontal="true" -->
+<!--                     android:layout_centerVertical="true" -->
+<!--                     android:visibility="gone" -->
+<!--                     android:background="@drawable/selector_for_info_button" /> -->
+<!--             </RelativeLayout> -->
+<!--         </RelativeLayout> -->
+
+</RelativeLayout>

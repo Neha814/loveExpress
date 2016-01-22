@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/top_header"/> -->
+
+    <LinearLayout
+        android:id="@+id/layer1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/trans_theme"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/trans_black"
+                    android:padding="5dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ToggleButton
+                        android:id="@+id/toggleButtonSearch"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/toggle_selector"
+                        android:checked="true"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+
+                    <TextView
+                        android:id="@+id/search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Search"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/text_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/trans_black"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Turn off to not be shown to anyone in Search.\n You can Still see and chat with your friends"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/trans_white" />
+
+                <!-- show me layout -->
+
+
+                <!-- limit to search layout -->
+
+                <LinearLayout
+                    android:id="@+id/add_location_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:text="Swiping in"
+                        android:textColor="@color/theme_color"
+                        android:textSize="15sp" />
+                    
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        
+                        <Spinner
+                        android:id="@+id/radioGroupLocations"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:background="@null"
+                        android:popupBackground="@color/theme_color_light"
+                         />
+                        
+                    </LinearLayout>
+
+                    <TextView android:id="@+id/add_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_transparent_clicked"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Add a new Location"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+                    
+                    <TextView android:id="@+id/delete_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_transparent_clicked"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Delete Location"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+                    
+                </LinearLayout>
+                
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/trans_black"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Change your swipe location to see matches in other cities."
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/trans_white" />
+
+                <RelativeLayout
+                    android:id="@+id/limittosearchtextlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/limitsearchtextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/limittosearch"
+                        android:textColor="@color/theme_color"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/limitotsearchvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@+id/distanceform"
+                        android:text="55"
+                        android:textColor="@color/theme_color" />
+
+                    <TextView
+                        android:id="@+id/distanceform"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:text="mi"
+                        android:textColor="@color/theme_color" />
+                </RelativeLayout>
+
+                <SeekBar
+                    android:id="@+id/seeklitmitosearch"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:max="100"
+                    android:maxHeight="2dp"
+                    android:minHeight="2dp"
+                    android:padding="15dp"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/styled_progress"
+                    android:secondaryProgress="0"
+                    android:thumb="@drawable/slider_switch" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@color/trans_white" />
+
+                <!-- show age layout -->
+
+                <RelativeLayout
+                    android:id="@+id/showagetextlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/showagetextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/showagetextview"
+                        android:textColor="@color/theme_color"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/maxage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:text="55"
+                        android:textColor="@color/theme_color" />
+
+                    <TextView
+                        android:id="@+id/agedeshtextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/maxage"
+                        android:text="-"
+                        android:textColor="@color/theme_color" />
+
+                    <TextView
+                        android:id="@+id/minagevalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/agedeshtextview"
+                        android:text="miniage"
+                        android:textColor="@color/theme_color" />
+                </RelativeLayout>
+
+                <com.edmodo.rangebar.RangeBar
+                    xmlns:custom="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/rangebar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:max="40"
+                    android:maxHeight="4dp"
+                    android:minHeight="4dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:progressDrawable="@drawable/styled_progress"
+                    android:thumb="@drawable/slider_switch"
+                    custom:barColor="@color/theme_color"
+                    custom:barWeight="2dp"
+                    custom:connectingLineColor="@color/white"
+                    custom:connectingLineWeight="2dp"
+                    custom:thumbImageNormal="@drawable/slider_switch"
+                    custom:thumbImagePressed="@drawable/slider_switch"
+                    custom:tickHeight="0dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@color/trans_white" />
+
+                <RelativeLayout
+                    android:id="@+id/limittoshowtextlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/show_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:padding="5dp"
+                        android:text="Show"
+                        android:textColor="@color/theme_color"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/show_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/arrow"
+                        android:padding="5dp"
+                        android:text="Only Women"
+                        android:textColor="@color/theme_color" />
+
+                    <ImageView
+                        android:id="@+id/arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/arrow_right"
+                        android:text="Km"
+                        android:textColor="@color/theme_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/showdistancetextlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/showdistancetextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/showdistancetextview" />
+
+                    <TextView
+                        android:id="@+id/distancevalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:text="distancevalue" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/showdistanceUnitlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/limit_search_tab"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:id="@+id/MiTextviewparentlayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/selector_on" >
+
+                        <TextView
+                            android:id="@+id/MiTextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="@string/mitext" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/kmTextviewparentLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/selector_off" >
+
+                        <TextView
+                            android:id="@+id/kmTextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="@string/kimetertext" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Contectlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/deletAcountlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone" >
+
+                    <Button
+                        android:id="@+id/deleteaccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/selector_for_contac"
+                        android:gravity="center"
+                        android:text="@string/deleteaccount" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/logoLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/com_facebook_logo" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layer2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <!-- <include layout="@layout/top_header" /> -->
+
+        <TextView
+            android:id="@+id/show_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:text="Show"
+            android:textSize="17sp" />
+
+        <!-- <ListView android:id="@+id/show_values" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:divider="@android:color/white" -->
+        <!-- android:dividerHeight="0.5dip" /> -->
+
+        <RadioGroup
+            android:id="@+id/prefrenceradio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/only_men"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="Only Men"
+                android:textColor="@android:color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/only_women"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="Only Women"
+                android:textColor="@android:color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/both"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="Men &amp; Women"
+                android:textColor="@android:color/white" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/updatelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_theme_clicked"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/update"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+</LinearLayout>
